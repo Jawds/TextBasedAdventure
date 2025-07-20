@@ -1,6 +1,9 @@
 #include <iostream>
 
 int main() {
-    std::cout << "Hello World";
+    int a;
+    std::cin >> a;
+
+    std::cout << a;
     return 0;
 }

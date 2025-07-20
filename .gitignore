@@ -1,4 +1,4 @@
 /.vs
 /.vscode
-/.gitattributes
-/.main.exe
+.gitattributes
+main.exe

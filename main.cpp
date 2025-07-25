@@ -1,7 +1,8 @@
 #include <iostream>
+#include <fstream>
 
 int main() {
-    int a;
+    std::string a;
     std::cin >> a;
 
     std::cout << a;

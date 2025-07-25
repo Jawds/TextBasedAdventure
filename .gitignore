@@ -1,4 +1,8 @@
 /.vs
 /.vscode
 .gitattributes
-main.exe
+.\main.exe
+*.exe
+*.exe
+main.obj
+*.exe

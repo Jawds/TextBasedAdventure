@@ -1,3 +1,6 @@
 /.vs
 /.vscode
 /.gitattributes
+*.exe
+*.o
+main.o

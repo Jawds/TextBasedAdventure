@@ -6,6 +6,16 @@
 
 int main() {
 
+    GetPlayerName();
+
+    return 0;
+}
+
+void set_timer(int seconds) {
+    std::this_thread::sleep_for(std::chrono::seconds(seconds));
+}
+
+void GetPlayerName() {
     std::string PlayerName;
 
 
@@ -14,24 +24,19 @@ int main() {
     std::cout << "What is your name..?\n";
     std::cin >> PlayerName;
 
-    std::this_thread::sleep_for(std::chrono::seconds(1));
+    set_timer(1);
 
     std::cout << "Your name is .. " << PlayerName << "? (Y/N)";
-    
-    
-    
-    
     
     system("cls");
 
     std::cout << "Your name has been recorded.\n" << std::endl;
     
-    std::this_thread::sleep_for(std::chrono::seconds(5));
+    set_timer(3);
 
     system("cls");
 
-    std::this_thread::sleep_for(std::chrono::seconds(5));
-    return 0;
+    set_timer(5);
 }
 
 // make a separate file for saving user variables like name, location, items in inventory etc.
